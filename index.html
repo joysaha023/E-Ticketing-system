@@ -192,7 +192,7 @@
               <div class="flex flex-col items-center gap-5">
                 <img src="./assets/images/fare.png" alt="tk" />
                 <div class="text-center">
-                  <h4 class="font-rale font-bold text-4xl">550 Taka</h4>
+                  <h4 class="font-rale font-bold text-4xl"><span id="ticket-price">550</span> Taka</h4>
                   <p class="font-rale text-2xl font-semibold text-gray-500">Per Seat</p>
                 </div>
               </div>
@@ -490,14 +490,17 @@
               <div class="p-8 bg-[#F7F8F8] rounded-lg w-full mb-6">
                   <!-- heading  -->
                   <div class="pb-4 border-dashed font-medium border-b flex justify-between text-[#030712]">
-                      <p>Seat <sup id="selected-seat-count"
+                      <p>Seat <sup id="selected-seat-num"
                               class="px-2 rounded-[5px] bg-[#1DD100] text-white text-xs font-bold">0</sup>
                       </p>
                       <p>Class</p>
                       <p>Price</p>
                   </div>
                   <!-- appended section  -->
-                  <div id="appended-section" class="border-b">
+                  <div  class="border-b">
+                    <ul id="appended-section">
+
+                    </ul>
                       <!-- <div class="my-2 flex justify-between text-[rgba(3,7,18,0.6)]">
                           <p>C2</p>
                           <p>Economy</p>
@@ -517,7 +520,7 @@
                       <input id="input-coupon" class="py-5 pl-[22px] rounded-xl w-full placeholder:text-sm"
                           type="text" placeholder="Have any coupon?">
                       <button id="couponBtn" disabled
-                          class="absolute right-2 top-2 btn font-semibold text-white bg-[#1DD100]">couponBtn</button>
+                          class="absolute right-2 top-2 btn font-semibold text-white bg-[#1DD100]">Apply</button>
                   </div>
                   <div class="font-medium flex justify-between text-[#030712]">
                       <p>Grand Total</p>
@@ -614,5 +617,8 @@
       </div>
   </footer>
   <!-- footer section end -->
+
+  <script src="./js/script.js"></script>
+  <script src="./js/utility.js"></script>
 </body>
 </html>

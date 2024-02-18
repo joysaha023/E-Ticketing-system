@@ -9,3 +9,11 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+
+#appended-section li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    color: #03071299;
+}
