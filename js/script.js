@@ -2,6 +2,7 @@ const seatSelectId = document.getElementById('seatSelectid');
 const selectBtn = document.getElementsByClassName('selectBtn');
 const appendSection = document.getElementById('appended-section');
 const couponBtn = document.getElementById('couponBtn');
+const nextBtn = document.getElementById('nextBtn');
 
 
 let seatNum = 0;
@@ -95,6 +96,7 @@ function popUp(){
         hideElementbyId('main1')
         hideElementbyId('footer1')
         showElementById('success-modal')
+        
     }
     else{
         alert('Please Enter Your Phone number')
