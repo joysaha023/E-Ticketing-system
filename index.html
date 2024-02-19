@@ -94,7 +94,7 @@
                 <p>use by january 2024</p>
               </div>
               <div>
-                <h2 class="font-extrabold font-rale  black-primary text-[26px] lg:text-[2.125rem]">NEW15</h2>
+                <h2 id="new15" class="font-extrabold font-rale  black-primary text-[26px] lg:text-[2.125rem]">NEW15</h2>
                 <h3>coupon Code</h3>
               </div>
               <div class="w-8 h-8 hidden lg:block left-[50%] -top-4 absolute bg-white rounded-full"></div>
@@ -108,7 +108,7 @@
                 <p>use by january 2024</p>
               </div>
               <div>
-                <h2 class="font-extrabold text-[26px] font-rale black-primary lg:text-[2.125rem]">Couple 20</h2>
+                <h2 id="couple20" class="font-extrabold text-[26px] font-rale black-primary lg:text-[2.125rem]">Couple 20</h2>
                 <h3>coupon Code</h3>
               </div>
               <div class="w-8 h-8 left-[50%] hidden lg:block -top-4 absolute bg-white rounded-full"></div>
@@ -499,39 +499,28 @@
                   <!-- appended section  -->
                   <div  class="border-b">
                     <ul id="appended-section">
-
                     </ul>
-                      <!-- <div class="my-2 flex justify-between text-[rgba(3,7,18,0.6)]">
-                          <p>C2</p>
-                          <p>Economy</p>
-                          <p>550</p>
-                      </div>
-                      <div class="my-2 flex justify-between text-[rgba(3,7,18,0.6)]">
-                          <p>C2</p>
-                          <p>Economy</p>
-                          <p>550</p>
-                      </div> -->
                   </div>
                   <div class="my-[17px] font-medium flex justify-between text-[#030712]">
                       <p>Total Price</p>
-                      <p>BDT <span id="total-price">0</span></p>
+                      <p>BDT <span id="calculate-price">0</span></p>
                   </div>
-                  <div id="hide-hobe" class="relative mb-6">
+                  <div id="hide-input" class="relative mb-6">
                       <input id="input-coupon" class="py-5 pl-[22px] rounded-xl w-full placeholder:text-sm"
                           type="text" placeholder="Have any coupon?">
-                      <button id="couponBtn" disabled
+                      <button id="couponBtn" 
                           class="absolute right-2 top-2 btn font-semibold text-white bg-[#1DD100]">Apply</button>
                   </div>
                   <div class="font-medium flex justify-between text-[#030712]">
                       <p>Grand Total</p>
-                      <p>BDT <span id="grand-total">0</span></p>
+                      <p>BDT <span id="calculate-grand-total">0</span></p>
                   </div>
               </div>
               <!-- submit form -->
               <div class="">
                   <div class="mt-4"><label class="font-semibold">Passenger Name*</label><br>
                       <input class="my-4 py-5 pl-[22px] border rounded-xl w-full" type="text"
-                          placeholder="Enter your name">
+                          placeholder="Enter your name" required>
                   </div>
 
                   <div class="mt-4"><label class="font-semibold">Phone Number*</label><br>

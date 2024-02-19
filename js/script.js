@@ -5,6 +5,8 @@ const couponBtn = document.getElementById('couponBtn');
 
 
 let seatNum = 0;
+// let totalPrice = 0;
+
 for(const seat of selectBtn){
     seat.addEventListener('click', function(event){
         if(seatNum < 4){
@@ -25,6 +27,7 @@ for(const seat of selectBtn){
             seat.classList.add('bg-[#1DD100]')
             seat.classList.add('text-white')
             seat.classList.remove('bg-[#F7F8F8]')
+            // seat.setAttribute('disabled')
 
             // Display the ticket details in list
             const elementLi = document.createElement('li')
@@ -42,9 +45,23 @@ for(const seat of selectBtn){
 
             elementLi.append(p0, p1, p2);
             appendSection.appendChild(elementLi);
+
+
+            //total price
+            totalPrice = seatNum * ticketPrice
+            setInnerTxtByvalue('calculate-price', totalPrice)
+            const grandFinal = totalPrice
+            setInnerTxtByvalue('calculate-grand-total', grandFinal)
         }
         else{
             alert("You reach out your 4 seat limit!!!")
         }
     })
 }
+
+const hideCoupon = document.getElementById('couponBtn')
+couponBtn.addEventListener('click', function(){
+    const new15 = getInnerTxtByvalue('new15')
+})
+
+
