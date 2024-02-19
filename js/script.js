@@ -28,7 +28,7 @@ for(const seat of selectBtn){
             seat.classList.add('bg-[#1DD100]')
             seat.classList.add('text-white')
             seat.classList.remove('bg-[#F7F8F8]')
-            // seat.setAttribute('disabled')
+            seat.setAttribute('disabled', '')
 
             // Display the ticket details in list
             const elementLi = document.createElement('li')
