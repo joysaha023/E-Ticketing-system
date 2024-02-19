@@ -52,6 +52,11 @@ for(const seat of selectBtn){
             setInnerTxtByvalue('calculate-price', totalPrice)
             const grandFinal = totalPrice
             setInnerTxtByvalue('calculate-grand-total', grandFinal)
+
+            // apply btn enabled
+            if(seatNum === 4){
+                couponBtn.removeAttribute('disabled')
+            }
         }
         else{
             alert("You reach out your 4 seat limit!!!")
@@ -83,10 +88,18 @@ couponBtn.addEventListener('click', function(){
 
 
 function popUp(){
-    hideElementbyId('header1')
-    hideElementbyId('main1')
-    hideElementbyId('footer1')
-    showElementById('success-modal')
+
+    const PhNum = document.getElementById('phoneNumber').value;
+    if(seatNum >= 1 && PhNum.length >= 1){
+        hideElementbyId('header1')
+        hideElementbyId('main1')
+        hideElementbyId('footer1')
+        showElementById('success-modal')
+    }
+    else{
+        alert('Please Enter Your Phone number')
+    }
+
 }
 
 function backWebsite(){
