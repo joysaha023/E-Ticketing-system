@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="container mx-auto">
+    <header id="header1" class="container mx-auto">
         <!-- Navber section start -->
         <nav class="font-rale">
             <div class="navbar bg-base-100">
@@ -78,7 +78,7 @@
         </section>
         <!-- Banner section end -->
     </header>
-    <main>
+    <main id="main1">
       <!-- coupon code section start-->
       <section class="container mx-auto px-2">
         <!-- best offer parent  -->
@@ -123,7 +123,7 @@
       <!-- coupon code section end-->
 
       <!-- ticket select section start -->
-      <section
+      <section id="select1"
         class="border-t-[rgb(29,209,0)] lg:mt-[8rem] mt-[4rem] mx-auto border-t-2 rounded-t-[8rem] py-20 bg-[rgb(247,248,248)]"
       >
         <div class="container px-2 mx-auto">
@@ -534,7 +534,7 @@
                   </div>
 
                   <div class="mb-6 mt-2">
-                      <button class="w-full font-rale btn bg-[#1DD100] font-extrabold text-xl text-white">Next</button>
+                      <button onclick="popUp()" class="w-full font-rale btn bg-[#1DD100] font-extrabold text-xl text-white">Next</button>
                   </div>
 
                   <div class="flex justify-evenly text-[rgba(3,7,18,0.6)]">
@@ -551,8 +551,8 @@
     </main>
 
     <!-- success modal start-->
-    <section id="success-modal" class=" hidden mx-auto font-inter ">
-      <div class="w-3/4 mx-auto bg-slate-400 flex flex-col items-center pb-14">
+    <section id="success-modal" class=" hidden mx-auto my-16 font-inter ">
+      <div class="w-3/4 mx-auto bg-white shadow-2xl flex flex-col items-center pb-14">
           <div class="flex flex-col text-center items-center gap-10">
               <div class="mt-14">
                   <img src="./assets/images/success.png" alt="">
@@ -562,15 +562,15 @@
               <span>Shortly you will find a confirmation in your email.</span>
           </div>
           <div class="mt-5">
-              <button
-                  class="hover:bg-emerald-700 text-xl font-semibold bg-[#27AE60] text-white py-4 rounded-full px-24">Continue</button>
+              <button 
+                  class="hover:bg-emerald-700 text-xl font-semibold bg-[#27AE60] text-white py-4 rounded-full px-24"><a href="./index.html">Continue</a></button>
           </div>
       </div>
   </section>
     <!-- success modal end -->
 
     <!-- footer section start -->
-    <footer class="footer mx-auto py-[120px] bg-[#030712] text-neutral-content">
+    <footer id="footer1" class="footer mx-auto py-[120px] bg-[#030712] text-neutral-content">
       <div class="container mx-auto px-2">
           <div class="flex justify-between w-full pb-12 border-dashed border-b">
               <aside>

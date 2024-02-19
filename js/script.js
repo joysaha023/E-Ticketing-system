@@ -59,9 +59,39 @@ for(const seat of selectBtn){
     })
 }
 
-const hideCoupon = document.getElementById('couponBtn')
+const hideCoupon = document.getElementById('hide-input')
 couponBtn.addEventListener('click', function(){
-    const new15 = getInnerTxtByvalue('new15')
+    const new15 = document.getElementById('new15').innerText
+    const couple20 = document.getElementById('couple20').innerText
+    const inputCoupon = getInValueFromId('input-coupon')
+    if (inputCoupon === new15){
+        const grand15 = totalPrice * 0.15
+        const grandFinal = totalPrice - grand15
+        setInnerTxtByvalue('calculate-grand-total', grandFinal)
+        hideCoupon.classList.add('hidden')
+    }
+    else if(inputCoupon === couple20){
+        const grand20 = totalPrice * 0.20
+        const grandFinal = totalPrice - grand20
+        setInnerTxtByvalue('calculate-grand-total', grandFinal)
+        hideCoupon.classList.add('hidden')
+    }
+    else{
+        alert("Your Coupon is not valid")
+    }
 })
 
 
+function popUp(){
+    hideElementbyId('header1')
+    hideElementbyId('main1')
+    hideElementbyId('footer1')
+    showElementById('success-modal')
+}
+
+function backWebsite(){
+    showElementById('header1')
+    showElementById('main1')
+    showElementById('footer1')
+    hideElementbyId('success-modal')
+}
